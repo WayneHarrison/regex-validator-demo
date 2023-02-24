@@ -1,1 +1,1 @@
-"# regex-validator-demo" 
+Demo website for simple-regex-validator
