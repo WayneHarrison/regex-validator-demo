@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Regex Validator Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="page-container">
+        <div class="page">
+            <div class="content">
+                <h1>Simple Regex Validator</h1>
+            </div>
+            <div class="content">
+                <p id="result"></p>
+            </div>
+            <div class="content">
+                <select class="txt-input">
+                    <optgroup label="Numbers">
+                        <option value="wholeNum">Whole</option>
+                        <option value="decimalNum">Decimal</option>
+                        <option value="wholeAndDecNum">Whole and Decimal</option>
+                        <option value="negPosWholeAndDecNum">Neg + Pos Whole and Decimal</option>
+                        <option value="wholeDecFraction">Whole Decimal and Fraction</option>
+                    </optgroup>
+                    <optgroup label="Alphanumeric">
+                        <option value="alphaNumNoSpace">Alphanumeric No Space</option>
+                        <option value="alphaNumWithSpace">Alphanumeric With Space</option>
+                    </optgroup>
+                </select>
+                <input id="userInput" type="text" class="txt-input">
+                <button id="testUserinput" class="btn">Test Input</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
