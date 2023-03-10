@@ -10,17 +10,17 @@
 </head>
 
 <body>
-    <script src="index.js"></script>
+
     <div class="page-container">
         <div class="page">
             <div class="content">
                 <h1>Simple Regex Validator</h1>
             </div>
             <div class="content">
-                <p id="result"></p>
+                <p id="resultBox"></p>
             </div>
             <div class="content">
-                <select class="txt-input">
+                <select class="txt-input" id="regexSelector">
                     <optgroup label="Numbers">
                         <option value="wholeNum">Whole</option>
                         <option value="decimalNum">Decimal</option>
@@ -32,12 +32,58 @@
                         <option value="alphaNumNoSpace">Alphanumeric No Space</option>
                         <option value="alphaNumWithSpace">Alphanumeric With Space</option>
                     </optgroup>
+                    <optgroup label="Emails">
+                        <option value="commonEmail">Common Email</option>
+                        <option value="unCommonEmail">Uncommon Email</option>
+                    </optgroup>
+                    <optgroup label="Passwords">
+                        <option value="complexPassword">Complex Passwords</option>
+                        <option value="moderatePassword">Moderate Passwords</option>
+                    </optgroup>
+                    <optgroup label="Username">
+                        <option value="userName">User Name</option>
+                    </optgroup>
+                    <optgroup label="IP Addresses">
+                        <option value="v4Ip">IPv4</option>
+                        <option value="v6Ip">IPv6</option>
+                        <option value="v4orV6Ip">IPv4 or IPv6</option>
+                    </optgroup>
+                    <optgroup label="Dates">
+                        <option value="ymd">Year Month Day(2002-05-01)</option>
+                        <option value="dmy">Day Month Year(01-05-2023)</option>
+                        <option value="dabvmy">Day Month Year(01-Oct-2023)</option>
+                    </optgroup>
+                    <optgroup label="Time">
+                        <option value="Time12Hr">12 Hour Time</option>
+                        <option value="Time24Hr">24 Hour Time</option>
+                    </optgroup>
+                    <optgroup label="Html Tags">
+                        <option value="htmlTag">HTML Tag</option>
+                    </optgroup>
+                    <optgroup label="JS Handlers">
+                        <option value="inlineJs">Inline JS Handler</option>
+                        <option value="inlineWithElement">Inline JS Handler with Element</option>
+                    </optgroup>
+                    <optgroup label="Slug">
+                        <option value="slug">Slug</option>
+                    </optgroup>
+                    <optgroup label="Duplicates">
+                        <option value="dupes">Duplicates</option>
+                    </optgroup>
+                    <optgroup label="Phone Numbers">
+                        <option value="phoneNumbers">Phone Numbers</option>
+                    </optgroup>
+                    <optgroup label="File Paths">
+                        <option value="filePathWithExt">File Path with Name and Extension</option>
+                        <option value="filePathOptionalExt">File Path With Optional Name and Extension</option>
+                    </optgroup>
                 </select>
                 <input id="userInput" type="text" class="txt-input">
-                <button id="testUserinput" class="btn">Test Input</button>
+                <button id="testUserinput" class="btn" onclick="TestUserInput()">Test Input</button>
             </div>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

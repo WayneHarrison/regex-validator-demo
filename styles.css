@@ -58,3 +58,20 @@
      padding: 5px;
      border-radius: 3px;
  }
+
+ .p-positive {
+     background-color: lightgreen;
+     border: 1px solid black;
+ }
+
+ .p-negative {
+     background-color: red;
+     color: white;
+     border: 1px solid black;
+ }
+
+ p {
+     min-width: 200px;
+     text-align: center;
+     border-radius: 5px;
+ }
