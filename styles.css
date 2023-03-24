@@ -58,6 +58,7 @@
      margin: 5px;
      padding: 5px;
      border-radius: 3px;
+     max-width: 250px;
  }
 
  .p-positive {
